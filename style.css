@@ -1,0 +1,65 @@
+.bg {
+    background-color: #021a3f;
+    color: white;
+}
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.timeBtn {
+    background-color: inherit;
+    border: none;
+    color: #db6c1c;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.timeBtn:active {
+    border: none;
+    background-color: inherit;
+    color: #db6c1c;
+}
+
+.time {
+    font-size: 25px;
+}
+
+.circle {
+    background: inherit;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    text-align: center;
+    border: 3px #db6c1c solid;
+    vertical-align: middle;
+    font-size: 300%;
+    position: relative;
+    display: inline-block;
+    margin: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+html {
+    font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 28px;
+    }
+}
