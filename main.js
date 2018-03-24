@@ -105,6 +105,9 @@ function printTimer() {
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
     display.textContent = hours + ":" + minutes + ":" + seconds;
+    var timePassedPercent = (duration - secondsLeft) / duration;
+    $('.circle span').css('transform', 'scaleY(' + timePassedPercent + ')');
+
     if (secondsLeft <= 0) {
         clearInterval(sessionIntervalId);
         alarm.play();

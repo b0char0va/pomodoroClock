@@ -37,9 +37,23 @@
     font-size: 300%;
     position: relative;
     display: inline-block;
-    margin: 5%;
+    margin-top: 5%;
     padding-top: 20px;
     padding-bottom: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.circle span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #db6c1c;
+    z-index: -1;
+    transform: scaleY(0.00);
+    transform-origin: 50% 100%;
 }
 
 html {
