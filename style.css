@@ -27,7 +27,7 @@
 }
 
 .circle {
-    background: inherit;
+    background-color: #021a3f;
     width: 300px;
     height: 300px;
     border-radius: 50%;

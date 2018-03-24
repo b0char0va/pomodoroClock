@@ -1,3 +1,4 @@
+var alarm = document.getElementById('alarm');
 var breakLength; //number of seconds for break session
 var sessionLength; //number of seconds for work session
 var StartTime; //when session was started
@@ -106,6 +107,7 @@ function printTimer() {
     display.textContent = hours + ":" + minutes + ":" + seconds;
     if (secondsLeft <= 0) {
         clearInterval(sessionIntervalId);
+        alarm.play();
         if (isBreak === false) {
             isBreak = true;
             $('#title').text("Break");
